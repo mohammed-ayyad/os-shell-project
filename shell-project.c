@@ -1,3 +1,4 @@
+//هذا الملف مجرد ملف بدائي وسيتم رفع المشروع كاملا قبل المناقشة ان شاء الله
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/wait.h>
