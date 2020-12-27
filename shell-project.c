@@ -158,8 +158,8 @@ int main(int argc, char *argv[])
 
             int x = open(arg2[1], O_RDWR | O_CREAT, 0777);
 
-            int m = fork();
-            if (m == 0)
+            int pid2 = fork();
+            if (pid2 == 0)
             {
                 dup2(x, 1);
                 execvp(arg[0], arg3);
@@ -187,8 +187,8 @@ int main(int argc, char *argv[])
 
             int x = open(arg2[1], O_APPEND | O_RDWR | O_CREAT, 0777);
 
-            int m = fork();
-            if (m == 0)
+            int pid2 = fork();
+            if (pid2 == 0)
             {
                 dup2(x, 1);
                 execvp(arg[0], arg3);
